@@ -1,6 +1,8 @@
 package com.kevinvilla.prueba.service
 
+
 import com.kevinvilla.prueba.model.Client
+
 import com.kevinvilla.prueba.model.Product
 import com.kevinvilla.prueba.repository.ProductRepository
 import org.springframework.beans.factory.annotation.Autowired
@@ -24,6 +26,7 @@ class ProductService {
 
         return productRepository.save(product)
     }
+
     fun update(product: Product): Product {
         return productRepository.save(product)
     }

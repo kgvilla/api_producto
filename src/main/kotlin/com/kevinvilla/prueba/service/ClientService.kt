@@ -26,6 +26,7 @@ class ClientService {
         return clientRepository.save(client)
     }
 
+
     fun update(client: Client):Client{
     return clientRepository.save(client)
     }
@@ -42,5 +43,6 @@ class ClientService {
         clientRepository.deleteById (id)
         return  true
     }
+
 
 }

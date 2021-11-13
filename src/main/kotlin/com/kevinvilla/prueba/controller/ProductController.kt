@@ -24,6 +24,7 @@ class ProductController {
         return productService.save(product)
 
     }
+
     @PutMapping
     fun update (@RequestBody product: Product): Product {
         return productService.update(product)
@@ -38,4 +39,5 @@ class ProductController {
     fun  delete (@PathVariable ( "id" ) id: Long ): Boolean {
         return productService.delete (id)
     }
+
 }
